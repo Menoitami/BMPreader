@@ -28,4 +28,9 @@ This program is a **BMP reader** that loads BMP image files, extracts pixel data
 To compile the program, use `g++`:
 
 ```bash
-g++ -o BMPreader main.cpp BMPreader.cpp -std=c++17
+mkdir build
+cd build
+cmake ..
+cmake --build .
+bmpreader.exe ..\hello.bmp
+```
